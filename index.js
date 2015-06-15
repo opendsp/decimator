@@ -4,7 +4,7 @@
  * @author potasmic
  * @org opendsp
  * @desc Downsampler
- * @version 0.0.1
+ * @version 0.0.2
  */
 /*
 * Learn more about down-sampling: https://en.wikipedia.org/wiki/Decimation_(signal_processing)
@@ -20,8 +20,8 @@ function Decimator ( factor ) {
 }
 
 Decimator.prototype.run = function(input) {
-  if ( this.tillNextSample > 0 ) {
-    this.tillNextSample--;
+  this.tillNextSample--;
+  if ( this.tillNextSample >= 0 ) {
     return this.currentValue;
   } else {
     this.tillNextSample = this.factor;
