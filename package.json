@@ -1,0 +1,19 @@
+{
+  "name": "decimator",
+  "version": "1.0.0",
+  "description": "downsampler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opendsp/Decimator.git"
+  },
+  "author": "potasmic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opendsp/Decimator/issues"
+  },
+  "homepage": "https://github.com/opendsp/Decimator#readme"
+}
